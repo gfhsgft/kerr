@@ -1,0 +1,582 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #d1d5db;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2em;
+  }
+  
+  /* Featured Section */
+  #featured {
+    text-align: center;
+    background: #f3f4f6;
+    padding: 2em 0;
+    border-radius: 8px;
+    margin: 2em 0;
+  }
+  
+  .featured-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Book Grid */
+  .book-category {
+    margin: 2em 0;
+  }
+  
+  .book-category h3 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+  }
+  
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+    margin: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .book-item img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Blog Section */
+  article {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1.5em 0;
+  }
+  
+  article h3 {
+    margin-bottom: 0.5em;
+    color: #2563eb;
+  }
+  
+  article p {
+    color: #6b7280;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #2563eb;
+    color: #fff;
+    margin-top: 2em;
+  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #d1d5db;
+  }
+  
+  /* Section Title */
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 1.5em;
+  }
+  
+  /* Books Grid */
+  .books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 1em;
+  }
+  
+  .book-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .book-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .book-details {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .book-details h3 {
+    color: #2563eb;
+    margin-bottom: 0.5em;
+  }
+  
+  .book-details p {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  /* Hover Effect */
+  .book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #2563eb;
+    color: #fff;
+    margin-top: 2em;
+  }
+/* Books Section */
+#books {
+    padding: 2em;
+  }
+  
+  .books-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  
+  .books-category {
+    background: #f3f4f6;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .books-category h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2563eb;
+    margin-bottom: 1em;
+  }
+  
+  .books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  
+  .book-card {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .book-card img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-details h4 {
+    color: #2563eb;
+    margin-bottom: 0.5em;
+  }
+  
+  .book-details p {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+/* Contact Section */
+#contact {
+    padding: 2em;
+    background: #f9fafb;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+  }
+  
+  .contact-info {
+    padding: 1.5em;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #2563eb;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5em;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  
+  .social-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .social-links img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contact-form {
+    padding: 1.5em;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  
+  .contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #374151;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    padding: 0.8em;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #1e3a8a;
+  }
+  
+  /* Map Section */
+  #map {
+    margin-top: 2em;
+    width: 100%;
+    background: #e5e7eb;
+  }
+  
+  #map iframe {
+    border: none;
+    border-radius: 10px;
+  }
+/* Blog Section */
+#blog {
+    padding: 2em;
+    background: #f9fafb;
+  }
+  
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 1.5em;
+  }
+  
+  .blog-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 1.5em;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 0.8em;
+  }
+  
+  .blog-content p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .blog-content .read-more {
+    text-decoration: none;
+    color: white;
+    background: #2563eb;
+    padding: 0.6em 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .blog-content .read-more:hover {
+    background: #1e3a8a;
+  }
+/* Read More Section */
+#post {
+    padding: 2em;
+    background: #f9fafb;
+  }
+  
+  .post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-content h2 {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 1.2em;
+  }
+  
+  .post-meta {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5em;
+  }
+  
+  .post-content img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1.5em 0;
+  }
+  
+  .post-content p {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .post-content h3 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-top: 1.5em;
+  }
+  
+  .author-bio {
+    margin-top: 3em;
+    padding: 1.5em;
+    background: #f1f5f9;
+    border-radius: 10px;
+  }
+  
+  .author-bio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  
+  .comments-section {
+    margin-top: 3em;
+  }
+  
+  .comments-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  
+  .comment {
+    background: #f3f4f6;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+  }
+  
+  .comment-form h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+  }
+  
+  .comment-form .form-group {
+    margin-bottom: 1em;
+  }
+  
+  .comment-form .form-group label {
+    font-weight: 600;
+  }
+  
+  .comment-form .form-group input,
+  .comment-form .form-group textarea {
+    padding: 0.8em;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .comment-form button {
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .comment-form button:hover {
+    background: #1e3a8a;
+  }
+            

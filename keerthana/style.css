@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4em 1em;
+  }
+  
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav-links li a.active {
+    text-decoration: underline;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    padding: 0.8em 1.5em;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .intro, .featured, .blog-highlight {
+    padding: 4em 1em;
+    text-align: center;
+  }
+  
+  .book-cards, .blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .book-card, .blog-card {
+    background: #f3f4f6;
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .blog-card img, .book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+  }
+  
+  .btn-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
